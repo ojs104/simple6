@@ -151,7 +151,13 @@ app.post("/api/post/list", (req, res) => {
 
 - id값을 만들어줘야 됨
 
+## err
 
+- 504 error 원인:
+
+- 해결: db insert document 만들 때 입력 잘 해야 됨 .
+        name: String,
+        postNum: Number
 ## proxy-middleware
  - 다른 서버로의 HTTP 요청을 중개하고 프록시하는 데 사용되는 미들웨어입니다. 주로 개발 중에 로컬 개발 서버에서 API 서버와 같은 백엔드 서버로의 요청을 프록시할 때 유용하게 사용됩니다.
  일반적으로, 프론트엔드와 백엔드 서버가 각각 다른 포트에서 실행 중일 때, CORS(Cross-Origin Resource Sharing) 문제로 인해 브라우저에서 직접 요청을 보낼 경우 문제가 발생할 수 있습니다. 이런 경우에 proxy-middleware를 사용하여 프론트엔드 개발 서버에서 백엔드 서버로의 요청을 중개할 수 있습니다. 
